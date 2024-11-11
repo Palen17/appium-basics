@@ -20,7 +20,9 @@ public class CreateDriverSessionUsingOptions {
                 //.setAppPackage("io.appium.android.apis")
                 //.setAppActivity("io.appium.android.apis.accessibility.CustomViewAccessibilityActivity")
                 .setAvd("Pixel_7")
-                .setAvdLaunchTimeout(Duration.ofSeconds(2000));
+                .setAvdLaunchTimeout(Duration.ofSeconds(2000))
+                .setUnlockType("pin")
+                .setUnlockKey("1111");
 
         URL url = new URL("http://0.0.0.0:4723");
 

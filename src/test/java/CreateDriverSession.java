@@ -9,6 +9,7 @@ import java.net.URL;
 public class CreateDriverSession {
 
     public static void main(String[] args) throws MalformedURLException {
+
         DesiredCapabilities caps = new DesiredCapabilities();
         caps.setCapability("platformName", "Android");
         caps.setCapability("appium:deviceName", "Pixel_5");
